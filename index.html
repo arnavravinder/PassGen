@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="heading highlight">Password Generator</h1>
+        </div>
+        <div class="password-generator">
+            <input type="text" id="password" class="password-display" readonly>
+            <button class="btn generate-btn highlight2" onclick="generatePassword()">Generate Password</button>
+            <button class="btn copy-btn highlight2" onclick="copyPassword()">Copy Password</button>
+        </div>
+        <div class="settings">
+            <label for="length" class="setting-label highlight2">Length:</label>
+            <input type="number" id="length" class="setting-input" min="8" max="128" value="12">
+            <div class="setting-buttons">
+                <button class="btn setting-btn highlight2" id="include-uppercase">Uppercase</button>
+                <button class="btn setting-btn highlight2" id="include-numbers">Numbers</button>
+                <button class="btn setting-btn highlight2" id="include-symbols">Symbols</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popup-message"></span>
+            <button class="btn close-btn highlight2" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
