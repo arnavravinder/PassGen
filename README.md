@@ -49,5 +49,5 @@ Enjoy using your new stylish password generator! 🔒🔑
 
 
 Feel free to reach out for any questions or suggestions! 😊
-Discord : arnav_r
-E-Mail : arnav@coding4good.in
+- Discord : arnav_r
+- E-Mail : arnav@coding4good.in
